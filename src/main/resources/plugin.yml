@@ -4,6 +4,8 @@ main: com.github.luriel0228.randomeffectcommand.RandomEffect
 api-version: '1.20'
 commands:
   이로운효과:
-    description: 이로운 효과
+    description: 이로운 효과를 부여합니다.
+    usage: /이로운효과 [<시간>] [<강도>]
   해로운효과:
-    description: 해로운 효과
+    description: 해로운 효과를 부여합니다.
+    usage: /해로운효과 [<시간>] [<강도>]

@@ -1,5 +1,6 @@
 package com.github.luriel0228.randomeffectcommand.commands;
 
+import com.github.luriel0228.randomeffectcommand.RandomEffect;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -13,6 +14,12 @@ import java.util.List;
 import java.util.Random;
 
 public class BadEffect implements CommandExecutor {
+
+    private final RandomEffect plugin;
+
+    public BadEffect(RandomEffect plugin) {
+        this.plugin = plugin;
+    }
 
     private final List<PotionEffectType> badEffects = Arrays.asList(
             PotionEffectType.SLOW_DIGGING,
